@@ -1,0 +1,207 @@
+/* global  */
+:root {
+  --main-color: #ff4c68;
+  --secondary-color: #ef8172;
+  --secondary-text-color: #8f8f8f;
+}
+body {
+  overflow-x: hidden;
+  font-size: 15px;
+  font-family: "montserrat", sans-serif;
+  scroll-behavior: smooth !important;
+}
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+/* Navigation bar  */
+.navbar-brand {
+  font-style: bold;
+  font-size: 2.5em;
+  font-family: "ubuntu";
+}
+.navbar {
+  padding-bottom: 4.5rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.nav-item {
+  padding-left: 1.7em;
+}
+.nav-link {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+/* Download button  */
+.download-btn {
+  margin: 5% 3% 5% 0%;
+}
+#footer-btn {
+  margin-right: 1em;
+}
+/* title */
+#title {
+  background-color: var(--main-color);
+  color: white;
+}
+.title-img {
+  max-width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
+}
+
+/* features section */
+#features {
+  position: relative;
+  margin: 0 auto;
+  padding: 5% 10%;
+  text-align: center;
+  background-color: white;
+}
+.feature-item {
+  padding: 1rem 1rem 1rem 0.2rem;
+}
+.feature-item > h3 {
+  font-weight: bolder;
+}
+.feature-item > p {
+  color: var(--secondary-text-color);
+}
+.feature-item > i {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.feature-item > i:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.feature-item > p {
+  font-size: 1.1em;
+}
+/* testimonials */
+#testimonials {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: "montserrat";
+}
+.carousel-item > img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 21px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+/* press */
+#press {
+  padding-top: 3%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+#press > img {
+  width: 5%;
+  filter: grayscale(1);
+  margin-left: 50px;
+}
+#press > img:hover {
+  filter: none;
+}
+#tech-crunch-logo {
+  height: 20%;
+}
+/* pricing  */
+#pricing {
+  padding: 10%;
+  text-align: center;
+}
+#pricing > h2,
+h3 {
+  font-weight: bold;
+}
+.pricing-card {
+  padding: 2em;
+}
+#pricing > p {
+  color: var(--secondary-text-color);
+}
+/* CTA  */
+#cta {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5% 7%;
+}
+#cta > h3 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.center {
+  text-align: center;
+}
+/* Footer  */
+#footer {
+  text-align: center;
+  padding: 5% 7% 3%;
+}
+#footer > p {
+  margin-top: 1.5em;
+}
+#footer-icons > a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  padding-left: 1.2em;
+}
+#footer-icons > a:hover {
+  color: var(--main-color);
+}
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    text-align: center;
+    width: 50%;
+  }
+  .middle-align {
+    text-align: center;
+  }
+  .middle-align > h1 {
+    font-size: 3rem;
+  }
+  #footer {
+    padding-bottom: 1.5em;
+  }
+  #cta > h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .middle-align > h1 {
+    font-size: 2.5rem;
+  }
+  .download-btn {
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+  }
+  .download-btn {
+    margin: 1% 0;
+  }
+  .container-fluid {
+    padding: 2% 7% 7%;
+  }
+  .title-img {
+    margin-top: 1.5em;
+  }
+}
+/* Notes 
+1. Z-index - it only works when we give it the postition property other than the default one i.e static.
+*/

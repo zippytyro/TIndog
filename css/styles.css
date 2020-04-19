@@ -186,9 +186,9 @@ h3 {
   padding: 5% 7% 3%;
 }
 
-#footer>p {
+#footer>p, span {
   margin-top: 1.5em;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 #footer-icons>a {
